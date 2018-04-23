@@ -15,6 +15,7 @@ namespace WebApplication1
         public static void Main(string[] args)
         {
             BuildWebHost(args).Run();
+            int a = 100;
         }
 
         public static IWebHost BuildWebHost(string[] args) =>
