@@ -1,0 +1,113 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2024
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoServer", "TCPCommunication\DemoServer.csproj", "{2D7B6947-83F6-4513-BED8-A0AA9EF9F583}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoClient", "TCPClient\DemoClient.csproj", "{EDBB501F-6710-4D3B-9FB2-43AFD171DF85}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PsServer", "PsServer\PsServer.csproj", "{8A3EC983-6327-41E9-B5F4-8E4D542F5DD4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PsClient", "PsClient\PsClient.csproj", "{C98AA2B0-11D3-481A-AAEF-79AAFE8EBEAB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test.Protocol", "Tests\Test.Protocol.csproj", "{973EC58C-7959-40A8-B916-D3BEB640F5DA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PsProtocol", "PsProtocol\PsProtocol.csproj", "{D72FA534-B60F-4476-A08A-D67B86DE0B58}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProcessMonitor", "ProcessMonitor\ProcessMonitor.csproj", "{781F12B0-C645-4273-9FE6-A25AABFF82E3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{2AEE2436-94E6-445B-8634-C8C29A1C86DA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test.Controllers", "Test.Controllers\Test.Controllers.csproj", "{8619EA60-5E67-46C4-AE87-681F2F930AD9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tcp", "Tcp", "{A743DAEE-2E9C-454A-9330-23788F14186B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2D7B6947-83F6-4513-BED8-A0AA9EF9F583}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D7B6947-83F6-4513-BED8-A0AA9EF9F583}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D7B6947-83F6-4513-BED8-A0AA9EF9F583}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D7B6947-83F6-4513-BED8-A0AA9EF9F583}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EDBB501F-6710-4D3B-9FB2-43AFD171DF85}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EDBB501F-6710-4D3B-9FB2-43AFD171DF85}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EDBB501F-6710-4D3B-9FB2-43AFD171DF85}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EDBB501F-6710-4D3B-9FB2-43AFD171DF85}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8A3EC983-6327-41E9-B5F4-8E4D542F5DD4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A3EC983-6327-41E9-B5F4-8E4D542F5DD4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A3EC983-6327-41E9-B5F4-8E4D542F5DD4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A3EC983-6327-41E9-B5F4-8E4D542F5DD4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C98AA2B0-11D3-481A-AAEF-79AAFE8EBEAB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C98AA2B0-11D3-481A-AAEF-79AAFE8EBEAB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C98AA2B0-11D3-481A-AAEF-79AAFE8EBEAB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C98AA2B0-11D3-481A-AAEF-79AAFE8EBEAB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{973EC58C-7959-40A8-B916-D3BEB640F5DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{973EC58C-7959-40A8-B916-D3BEB640F5DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{973EC58C-7959-40A8-B916-D3BEB640F5DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{973EC58C-7959-40A8-B916-D3BEB640F5DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D72FA534-B60F-4476-A08A-D67B86DE0B58}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D72FA534-B60F-4476-A08A-D67B86DE0B58}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D72FA534-B60F-4476-A08A-D67B86DE0B58}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D72FA534-B60F-4476-A08A-D67B86DE0B58}.Release|Any CPU.Build.0 = Release|Any CPU
+		{781F12B0-C645-4273-9FE6-A25AABFF82E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{781F12B0-C645-4273-9FE6-A25AABFF82E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{781F12B0-C645-4273-9FE6-A25AABFF82E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{781F12B0-C645-4273-9FE6-A25AABFF82E3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8619EA60-5E67-46C4-AE87-681F2F930AD9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8619EA60-5E67-46C4-AE87-681F2F930AD9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8619EA60-5E67-46C4-AE87-681F2F930AD9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8619EA60-5E67-46C4-AE87-681F2F930AD9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{8A3EC983-6327-41E9-B5F4-8E4D542F5DD4} = {A743DAEE-2E9C-454A-9330-23788F14186B}
+		{C98AA2B0-11D3-481A-AAEF-79AAFE8EBEAB} = {A743DAEE-2E9C-454A-9330-23788F14186B}
+		{973EC58C-7959-40A8-B916-D3BEB640F5DA} = {2AEE2436-94E6-445B-8634-C8C29A1C86DA}
+		{D72FA534-B60F-4476-A08A-D67B86DE0B58} = {A743DAEE-2E9C-454A-9330-23788F14186B}
+		{8619EA60-5E67-46C4-AE87-681F2F930AD9} = {2AEE2436-94E6-445B-8634-C8C29A1C86DA}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0A52567E-7E26-4AEE-9B7F-D47D3BA67850}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 9
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://b624-software.visualstudio.com/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = PsClient\\PsClient.csproj
+		SccProjectTopLevelParentUniqueName1 = TCPCommunication.sln
+		SccProjectName1 = PsClient
+		SccLocalPath1 = PsClient
+		SccProjectUniqueName2 = PsProtocol\\PsProtocol.csproj
+		SccProjectTopLevelParentUniqueName2 = TCPCommunication.sln
+		SccProjectName2 = PsProtocol
+		SccLocalPath2 = PsProtocol
+		SccProjectUniqueName3 = PsServer\\PsServer.csproj
+		SccProjectTopLevelParentUniqueName3 = TCPCommunication.sln
+		SccProjectName3 = PsServer
+		SccLocalPath3 = PsServer
+		SccProjectUniqueName4 = TCPClient\\DemoClient.csproj
+		SccProjectName4 = TCPClient
+		SccLocalPath4 = TCPClient
+		SccProjectUniqueName5 = TCPCommunication\\DemoServer.csproj
+		SccProjectName5 = TCPCommunication
+		SccLocalPath5 = TCPCommunication
+		SccProjectUniqueName6 = ProcessMonitor\\ProcessMonitor.csproj
+		SccProjectName6 = ProcessMonitor
+		SccLocalPath6 = ProcessMonitor
+		SccProjectUniqueName7 = Tests\\Test.Protocol.csproj
+		SccProjectTopLevelParentUniqueName7 = TCPCommunication.sln
+		SccProjectName7 = Tests
+		SccLocalPath7 = Tests
+		SccProjectUniqueName8 = Test.Controllers\\Test.Controllers.csproj
+		SccProjectTopLevelParentUniqueName8 = TCPCommunication.sln
+		SccProjectName8 = Test.Controllers
+		SccLocalPath8 = Test.Controllers
+	EndGlobalSection
+EndGlobal

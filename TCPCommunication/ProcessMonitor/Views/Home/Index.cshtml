@@ -1,0 +1,106 @@
+﻿@model ProcessMonitor.Models.ExchangedData
+
+
+@{
+    ViewData["Title"] = "Stare sistem";
+}
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+<body>
+    <div class="panel panel-default" style="margin-top:5px">
+        <div class="panel-heading" style="text-align:center">
+            Monitorizare in timp real
+        </div>
+        <div class="panel-body">
+            <div class="continut" style="float:left">
+                <img src="/images/Capture.PNG" class="imagine" style="align-self:auto" />
+            </div>
+
+            <div class="controale" style="float:right">
+
+                <label>INCHIDERE SISTEM</label>
+                <input type="button" id="close" value="Inchidere" style="width:100px" />
+                <br />
+
+                <label>ALARMA</label>
+                <input type="button" id="alarma" value="Alarma inactiva" style="width:150px" />
+                <br />
+
+                <label>POMPE</label><br />
+                <input type="text" id="p1" readonly value="Pompa 1" style="width:60px; background-color:red" />
+                <input type="text" id="p2" readonly value="Pompa 2" style="width:60px; background-color:red" />
+                <input type="text" id="p3" readonly value="Pompa 3" style="width:60px; background-color:red" />
+                <input type="text" id="p4" readonly value="Pompa 4" style="width:60px; background-color:red" />
+                <br />
+
+                <label>SENZORI</label><br />
+                <input type="text" id="s1" readonly value="Senzor 1" style="width:60px; background-color:red" />
+                <input type="text" id="s2" readonly value="Senzor 2" style="width:60px; background-color:red" />
+                <input type="text" id="s3" readonly value="Senzor 3" style="width:60px; background-color:red" />
+                <input type="text" id="s4" readonly value="Senzor 4" style="width:60px; background-color:red" />
+                <br />
+
+                <label>BUTOANE</label><br />
+                <input type="text" id="b1" readonly value="Buton 1" style="width:60px; background-color:red" />
+                <input type="text" id="b2" readonly value="Buton 2" style="width:60px; background-color:red" />
+                <input type="text" id="b3" readonly value="Buton 3" style="width:60px; background-color:red" />
+                <input type="text" id="b4" readonly value="Buton 4" style="width:60px; background-color:red" />
+
+                <br />
+            </div>
+        </div>
+    </div>
+</body>
+
+<script type="text/javascript">
+    (function manipulate() {
+        
+        @foreach (var x in @Model.Alarma)
+        {
+        <text>var element = document.getElementById("alarma");</text>
+            if (x) {  
+            <text>element.style.backgroundColor = '#008000';</text>
+            }
+            else
+            {
+
+            }
+        }
+        //var x = 1;
+        @foreach (var x in @Model.Pompa1)
+        {
+            
+        <text>var element = document.getElementById("p1");</text>
+            if (x) {
+            <text>element.style.backgroundColor = '#008000';</text>
+            }
+        }
+
+         @foreach (var x in @Model.Pompa2)
+        {
+        <text>var element = document.getElementById("p2");</text>
+             if (x) {
+            <text>element.style.backgroundColor = '#008000';</text>
+             }
+         }
+
+         @foreach (var x in @Model.Pompa3)
+        {
+        <text>var element = document.getElementById("p3");</text>
+             if (x) {
+            <text>element.style.backgroundColor = '#008000';</text>
+             }
+         }
+
+         @foreach (var x in @Model.Pompa4)
+        {
+        <text>var element = document.getElementById("p4");</text>
+             if (x) {
+            <text>element.style.backgroundColor = '#008000';</text>
+             }
+         }
+
+    })();</script>
+
