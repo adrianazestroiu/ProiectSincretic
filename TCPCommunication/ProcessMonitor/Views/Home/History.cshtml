@@ -1,0 +1,45 @@
+﻿@model IEnumerable<ProcessMonitor.DAL.Entries>
+
+@{
+    ViewData["Title"] = "History of logs";
+}
+
+<h2>Istoric date</h2>
+
+<table border="1">
+    <tr>
+        <th width="150">Id</th>
+        <th width="150">Timestamp</th>
+        <th width="150">Stare</th>
+        @*<th width="50">Pompa1</th>
+        <th width="50">Pompa2</th>
+        <th width="50">Pompa3</th>
+        <th width="50">Pompa4</th>
+        <th width="50">Buton1</th>
+        <th width="50">Buton2</th>
+        <th width="50">Buton3</th>
+        <th width="50">Buton4</th>*@
+    </tr>
+    @foreach (var item in Model)
+{
+    <tr>
+        <td width="150">
+            @Html.DisplayFor(modelItem => item.Id)
+        </td>
+
+        <td width="150">
+            @Html.DisplayFor(modelItem => item.Timespan)
+        </td>
+
+        <td width="150">
+            @Html.DisplayFor(modelItem => item.Stare)
+        </td>
+    </tr>
+
+    }
+
+</table>
+
+<div class="buton-back">
+    <button onclick="location.href='@( Url.Action("Index", "Home") )'">Back</button>
+</div>
